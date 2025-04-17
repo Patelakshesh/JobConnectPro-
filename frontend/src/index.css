@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 255 255;
+  --foreground: 0 0 0;
+}
+
+.dark {
+  --background: 0 0 0;
+  --foreground: 255 255 255;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-gray-500/50; /* Fixed outline class */
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .border-border {
+    border-color: rgb(229, 231, 235);
+  }
+}
