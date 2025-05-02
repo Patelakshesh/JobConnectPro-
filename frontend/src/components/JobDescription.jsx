@@ -59,7 +59,7 @@ export default function JobDescription() {
              {singleJob?.position} Position
             </Badge>
             <Badge className={"text-[#F83002] font-bold"} variant="ghost">
-              {singleJob?.JobType}
+              {singleJob?.jobType}
             </Badge>
             <Badge className={"text-[#7209b7] font-bold"} variant="ghost">
               {singleJob?.salary}LPA
@@ -81,9 +81,9 @@ export default function JobDescription() {
       <h1 className="border-b-2 border-b-gray-300 font-medium py-4">Job Description</h1>
       <div className="my-4">
         <h1 className="font-bold my-1">Role: <span className="pl-4 font-normal text-gray-800">{singleJob?.title}</span></h1>
-        <h1 className="font-bold my-1">Location: <span className="pl-4 font-normal text-gray-800">{singleJob?.location}</span></h1>
+        <h1 className="font-bold my-1">Location: <span className="pl-4 font-normal text-gray-800">{singleJob?.locations}</span></h1>
         <h1 className="font-bold my-1">Description: <span className="pl-4 font-normal text-gray-800">{singleJob?.description}</span></h1>
-        <h1 className="font-bold my-1">Experience: <span className="pl-4 font-normal text-gray-800">{singleJob?.experience} yrs</span></h1>
+        <h1 className="font-bold my-1">Experience: <span className="pl-4 font-normal text-gray-800">{singleJob?.experienceLevel}year</span></h1>
         <h1 className="font-bold my-1">Salary: <span className="pl-4 font-normal text-gray-800"> {singleJob?.salary}LPA</span></h1>
         <h1 className="font-bold my-1">Totle Applicant: <span className="pl-4 font-normal text-gray-800">{singleJob?.applications?.length}</span></h1>
         <h1 className="font-bold my-1">Posted Date: <span className="pl-4 font-normal text-gray-800"> {singleJob?.createdAt ? singleJob.createdAt.split("T")[0] : "N/A"}</span></h1>

@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link to={"/login"}>
                 <Button variant="outline">Login</Button>
               </Link>
-              <Link to="signup">
+              <Link to="/signup">
                 <Button className="bg-[#6A38C2] hover:bg-[#5b38a6] text-white">
                   Signup
                 </Button>

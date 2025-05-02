@@ -78,7 +78,7 @@ export default function UpdateProfileDialog({ open, setOpen }) {
                 </Label>
                 <Input
                   id="name"
-                  name="name"
+                  name="fullName"
                   type="text"
                   value={input.fullName}
                   onChange={changeEventHandle}
@@ -104,7 +104,7 @@ export default function UpdateProfileDialog({ open, setOpen }) {
                 </Label>
                 <Input
                   id="number"
-                  name="number"
+                  name="phoneNumber"
                   value={input.phoneNumber}
                   onChange={changeEventHandle}
                   className="col-span-3"
